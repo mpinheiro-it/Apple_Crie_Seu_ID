@@ -60,6 +60,21 @@ a:hover {
 
     }
 
+    #lupa {
+        position: relative;
+        top: 2px;
+    }
+
+    #bag {
+        position: relative;
+        top: 4px;
+    }
+
+    .nav-links a:hover {
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
 /* ID Apple */
     .menu-id-apple {       
         width: 100%;     
@@ -121,6 +136,10 @@ a:hover {
         display: inline-block; 
     }
 
+    .menu-id-apple a:hover {
+        color: #0070c9;
+    }
+
 /* CREATE APPLE ID SECTION */
     .create-apple-id {
 
@@ -137,6 +156,15 @@ a:hover {
     .create-apple-id p {
         margin: 5px 0 0 0; 
         font-size: 17px;
+    }
+
+    .create-apple-id a {
+        color: #0070c9;
+        text-decoration: none;
+    }
+
+    .create-apple-id a:hover {
+        text-decoration: underline  ;
     }
 
 
@@ -213,27 +241,38 @@ a:hover {
     }
 
 
-    #country-dropdown-div, #birth-date-div, #new-id-div,
-    #new-password-div, #confirm-password-div, #cellphone-country-dropdown-div,
-    #cellphone-number-div, #news-div, #privacy-div{
+    .whole-line-containers {
     display: block;  
     position: relative; 
     width: 480px;
     margin: 0 auto;      
     }
 
+    #birth-date-div  {
+        display: inline-block;           
+          
+    }
+
+  
+
     #country-dropdown-div {
         margin-top: 20px;
     }
 
-    #country-dropdown, #birth-date, #new-id, 
-    #new-password, #confirm-password, #cellphone-country-dropdown, 
-    #cellphone-number, #privacy-content
+    .whole-line-inputs
     {  
 
         width: 460px;   
         margin-top: 15px;   
         margin-bottom: 0px;
+    }
+
+    #birth-date {
+
+        width: 460px;   
+        margin-top: 15px;   
+        margin-bottom: 0px;
+        margin-left: 30px;
     }
 
     #country-dropdown-label {
@@ -256,6 +295,16 @@ a:hover {
     #cellphone-number-div p {
         margin-top: 10px;
         line-height: 1.42861;
+    }
+
+    #cellphone-number-field {
+        display: inline-block;  
+        width: 500px;    
+          
+    }
+
+    #cellphone-number {
+        width: 460px;           
     }
 
 
@@ -343,7 +392,7 @@ a:hover {
 
 /* PRIVACY SECTION */
     #privacy-content p {        
-        font-size: 13px;
+        font-size: 12px;
         color: rgb(102, 102, 102);
     }
 
@@ -359,11 +408,11 @@ a:hover {
 
 /* SUBMIT BUTTON */
 
-#submit-button-div {
-    display: block;
-    margin: 30px auto;
-     
-}
+    #submit-button-div {
+        display: block;
+        margin: 30px auto;
+        
+    }
 
     #submit-button {
         background-image: linear-gradient(rgb(66, 161, 236), rgb(0, 112, 201));

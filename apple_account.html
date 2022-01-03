@@ -31,8 +31,8 @@
         <li class="nav-links"><a>Só na Apple</a></li>
         <li class="nav-links"><a>Acessórios</a></li>
         <li class="nav-links"><a>Suporte</a></li>
-        <li class="nav-links"><a>Lupa</a></li>
-        <li class="nav-links"><a>Sacola</a></li>
+        <li class="nav-links"><a><img src="./lupa.png" id="lupa" width="13px" height="14px"></a></li>
+        <li class="nav-links"><a><img src="./bag.png" id="bag" width="18px" height="18px"></a></li> 
     </ul>
 </nav>
 
@@ -60,7 +60,7 @@
 <div class="create-apple-id">
     <h1>Crie seu ID Apple</h1>
     <p>Um ID Apple é o que você precisa para acessar todos os serviços da Apple.</p>
-    <p>Já tem um ID Apple? Encontre-o aqui </p>
+    <p>Já tem um ID Apple? <a>Encontre-o aqui</a> </p>
 </div>
 
 
@@ -77,10 +77,10 @@
     </div>
 
     
-    <div class="container" id="country-dropdown-div">
+    <div class="container whole-line-containers" id="country-dropdown-div">
         <label for="country-dropdown" id="country-dropdown-label">
             PAÍS/REGIÃO</label>
-        <select id="country-dropdown" class="container__input">
+        <select id="country-dropdown" class="container__input whole-line-inputs">
             <option value="AFG" dir="auto">
                               Afeganistão
                 
@@ -197,7 +197,7 @@
                               Botsuana
                 
             </option>
-            <option value="BRA" dir="auto">
+            <option value="BRA" dir="auto" selected>
                               Brasil
                 
             </option>
@@ -1069,35 +1069,36 @@
     </div>
 
     <div class="container" id="birth-date-div">    
-        <input placeholder="Data de nascimento" class="container__input" id="birth-date" />   
+        <input type="text" placeholder="Data de nascimento" class="container__input" id="birth-date" />   
         <label class="container__label" for="birth-date">Data de nascimento</label>
+        <img src="./Blue_question_mark_icon.svg" width="15px" height="15px">
     </div>
 
     <hr>
 
-    <div class="container" id="new-id-div">    
-        <input placeholder="nome@example.com" class="container__input" id="new-id" />   
+    <div class="container whole-line-containers" id="new-id-div">    
+        <input placeholder="nome@example.com" class="container__input whole-line-inputs" id="new-id" />   
         <label class="container__label" for="new-id">nome@example.com</label>
         <span id="new-id-caption">Este será seu novo ID Apple.</span>
     </div>
 
-    <div class="container" id="new-password-div">    
-        <input placeholder="Senha" class="container__input" id="new-password" />   
+    <div class="container whole-line-containers" id="new-password-div">    
+        <input type="password" placeholder="Senha" class="container__input whole-line-inputs" id="new-password" />   
         <label class="container__label" for="new-password">Senha</label>
         
     </div>
 
-    <div class="container" id="confirm-password-div">    
-        <input placeholder="Confirmar senha" class="container__input" id="confirm-password" />   
+    <div class="container whole-line-containers" id="confirm-password-div">    
+        <input type="password" placeholder="Confirmar senha" class="container__input whole-line-inputs" id="confirm-password" />   
         <label class="container__label" for="confirm-password">Confirmar senha</label>
         
     </div>
 
     <hr>
 
-    <div id="cellphone-country-dropdown-div" class="container"> 
+    <div id="cellphone-country-dropdown-div" class="container whole-line-containers"> 
 
-        <select id="cellphone-country-dropdown" class="container__input">
+        <select id="cellphone-country-dropdown" class="container__input whole-line-inputs">
             <option value="AF">
                             +93 (Afeganistão)
                 
@@ -1214,7 +1215,7 @@
                             +267 (Botsuana)
                 
             </option>
-            <option value="BR">
+            <option value="BR" selected>
                             +55 (Brasil)
                 
             </option>
@@ -2073,9 +2074,14 @@
         </select>        
     </div>
 
-    <div class="container" id="cellphone-number-div">    
-        <input placeholder="Número de telefone" class="container__input" id="cellphone-number" />   
-        <label class="container__label" for="cellphone-number">Número de telefone</label>
+    <div class="container whole-line-containers" id="cellphone-number-div">             
+        
+        <div id="cellphone-number-field">
+            <input placeholder="Número de telefone" class="container__input" id="cellphone-number" /> 
+            <label class="container__label" for="cellphone-number">Número de telefone</label>
+            <img src="./Blue_question_mark_icon.svg" width="15px" height="15px">
+        </div>        
+
         <p id="cellphone-caption">Certifique-se de inserir um número de telefone que você sempre possa acessar. Ele será usado para verificar a sua identidade quando você iniciar sessão em um novo dispositivo ou navegador da web. Taxas de mensagens ou dados podem ser aplicadas.</p>
     </div>
 
@@ -2090,7 +2096,7 @@
 
     <hr>
 
-    <div class="container" id="news-div">
+    <div class="container whole-line-containers" id="news-div">
 
         <div class="news">
             <input type="checkbox" name="announcements" name="announcements">
@@ -2126,11 +2132,13 @@
 
     </div>
 
-    <div id="privacy-div">
+    <hr>
+
+    <div class="container whole-line-containers" id="privacy-div">
 
         <div id="privacy-content">
 
-            <img src="./apple_privacy_update_icon.jpg" width="90px" height="60px">
+            <img src="./apple_privacy_update_icon.jpg" width="90px" height="50px">
             <p>
                 As informações do seu ID Apple são usadas para permitir que você inicie sessão de forma segura e acesse seus dados. A Apple registra determinados dados de uso para fins de segurança, suporte e geração de relatórios. 
                 <a href="">Veja como os seus dados são gerenciados.</a>
