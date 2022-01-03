@@ -249,11 +249,37 @@ a:hover {
     }
 
     #birth-date-div  {
-        display: inline-block;           
+        display: inline-block;   
+        position: relative;        
           
     }
 
-  
+    .info-message {
+        /*only shown on mouseover
+
+        /*position and display */
+        display: none;
+        position:absolute;
+        top: -60%; 
+        left: 80%;        
+        
+        /*sizing and border*/
+        width:200px;
+        height:50px;
+        border:1px solid #FFFFFF;
+        border-radius: 4px;
+        padding: 10px;
+
+        /*text and colors*/        
+        text-align: justify;
+        background: #FFFFFF;
+        z-index: 1;
+        font-size: 14px;
+        line-height: 1.2;
+        color: #333;
+    }
+
+
 
     #country-dropdown-div {
         margin-top: 20px;
@@ -299,6 +325,7 @@ a:hover {
 
     #cellphone-number-field {
         display: inline-block;  
+        position: relative;
         width: 500px;    
           
     }

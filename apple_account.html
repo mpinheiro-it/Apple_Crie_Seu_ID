@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    
     <title>Crie seu ID Apple</title>
 </head>
 <body>
@@ -1071,7 +1072,10 @@
     <div class="container" id="birth-date-div">    
         <input type="text" placeholder="Data de nascimento" class="container__input" id="birth-date" />   
         <label class="container__label" for="birth-date">Data de nascimento</label>
-        <img src="./Blue_question_mark_icon.svg" width="15px" height="15px">
+        <img src="./Blue_question_mark_icon.svg" id="birth-question-mark" width="15px" height="15px" onmouseover="showMessage(this)" onmouseout="hideMessage(this)">
+            <div class="info-message" id="birth-info-box">Esta informação é usada para determinar 
+                quais serviços estão disponíveis para sua conta.                
+            </div>
     </div>
 
     <hr>
@@ -2079,7 +2083,10 @@
         <div id="cellphone-number-field">
             <input placeholder="Número de telefone" class="container__input" id="cellphone-number" /> 
             <label class="container__label" for="cellphone-number">Número de telefone</label>
-            <img src="./Blue_question_mark_icon.svg" width="15px" height="15px">
+            <img src="./Blue_question_mark_icon.svg" id="cellphone-question-mark" width="15px" height="15px" onmouseover="showMessage(this)" onmouseout="hideMessage(this)">
+            <div class="info-message" id="cellphone-info-box">Este número de telefone será usado para 
+                verificar sua identidade e redefinir sua senha caso você a esqueça.              
+            </div>
         </div>        
 
         <p id="cellphone-caption">Certifique-se de inserir um número de telefone que você sempre possa acessar. Ele será usado para verificar a sua identidade quando você iniciar sessão em um novo dispositivo ou navegador da web. Taxas de mensagens ou dados podem ser aplicadas.</p>
@@ -2173,6 +2180,35 @@
 
 </footer>
 
+    <script>
+        //selects both information messages that are hidden
+        let birthMessage = document.querySelector("#birth-info-box") ;
+        let cellphoneMessage = document.querySelector("#cellphone-info-box") ;
+
+        //shows the appropriate message box according to what img is being hovered 
+        function showMessage(element){   
+
+            if (element.id == "birth-question-mark"){
+                birthMessage.style.display = "block"
+            }
+
+            if (element.id == "cellphone-question-mark"){
+                cellphoneMessage.style.display = "block"
+            }
+            
+        }
+        
+        //hide message box after mouse hover ends on the question icon img
+        function hideMessage(element){
+            if (element.id == "birth-question-mark"){
+                birthMessage.style.display = "none"
+            }
+
+            if (element.id == "cellphone-question-mark"){
+                cellphoneMessage.style.display = "none"
+            } 
+    }
+    </script>
 
 </body>
 </html>
