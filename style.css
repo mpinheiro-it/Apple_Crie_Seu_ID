@@ -14,6 +14,7 @@ a:hover {
     cursor: pointer;
 }
 
+
 /*NAVIGATION BAR */
 
     #navbar {
@@ -24,8 +25,7 @@ a:hover {
         /*size properties */
         width: 100%;
         height: 44px;
-        max-height: 44px;
-        min-width: 1024px;
+        max-height: 44px;        
         font-size: 17px;
 
 
@@ -73,6 +73,11 @@ a:hover {
     .nav-links a:hover {
         color: #FFFFFF;
         opacity: 1;
+    }
+
+    /*only displayed for small screens*/    
+    .small-screen-nav-list {
+        display: none;
     }
 
 /* ID Apple */
@@ -495,3 +500,62 @@ a:hover {
         text-decoration: underline;        
     }
 
+/*MEDIA QUERIES */
+
+@media (max-width: 1200px){    
+
+    .create-apple-id {          
+        padding: 10px;          
+    }
+
+    .create-apple-id h1 {
+        font-size: 30px;        
+    }
+    .create-apple-id p {        
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 900px){  
+    
+    .nav-list {
+        display: none;        
+    }
+    
+    .small-screen-nav-list {
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        list-style: none;        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .small-screen-nav-links{
+        cursor: pointer;        
+    }
+
+    .small-screen-nav-links a:hover {
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
+
+    #bag {        
+        top: 0px;
+    }
+
+    .menu-id-apple-content {
+        width: 100%;        
+    }
+    .menu-id-apple-itens {
+        display: none;
+    }
+
+    .menu-id-apple-titulo {
+        width: auto;  
+        margin-left: 20px;      
+    }
+}
