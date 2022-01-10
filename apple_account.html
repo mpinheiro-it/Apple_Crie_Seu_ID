@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <!-- Pagina original https://appleid.apple.com/account -->
@@ -19,7 +18,7 @@
 
     <ul class="nav-list">
         <li class="nav-links"><a>
-            <img src="./apple-logo.png" id="logo-apple" width="13px" height="14px">
+            <img src="https://github.com/mpinheiro-it/Apple_Crie_Seu_ID/blob/main/apple-logo.png?raw=true" id="logo-apple" width="13px" height="14px">
         </a>       
         </li>
         <li class="nav-links"><a>Loja</a></li>
@@ -32,28 +31,27 @@
         <li class="nav-links"><a>Só na Apple</a></li>
         <li class="nav-links"><a>Acessórios</a></li>
         <li class="nav-links"><a>Suporte</a></li>
-        <li class="nav-links"><a><img src="./lupa.png" id="lupa" width="13px" height="14px"></a></li>
-        <li class="nav-links"><a><img src="./bag.png" id="bag" width="18px" height="18px"></a></li> 
+        <li class="nav-links"><a><img src="https://github.com/mpinheiro-it/Apple_Crie_Seu_ID/blob/main/lupa.png?raw=true" id="lupa" width="13px" height="14px"></a></li>
+        <li class="nav-links"><a><img src="https://github.com/mpinheiro-it/Apple_Crie_Seu_ID/blob/main/bag.png?raw=true" id="bag" width="18px" height="18px"></a></li> 
     </ul>
-
-    <!--Alternative navigation bar used for mobile devices-->
+  
+   <!--Alternative navigation bar used for mobile devices-->
     <ul class="small-screen-nav-list">
 
         <li class="small-screen-nav-links">
             <a>
-                <img src="./menu.png" width="15px" height="14px">
+                <img src="https://github.com/mpinheiro-it/Apple_Crie_Seu_ID/blob/main/menu.png?raw=true" width="15px" height="14px">
             </a>
         </li>
 
         <li class="small-screen-nav-links">            
             <a>
-            <img src="./apple-logo.png" id="logo-apple" width="13px" height="14px">
+            <img src="https://github.com/mpinheiro-it/Apple_Crie_Seu_ID/blob/main/apple-logo.png?raw=true" id="logo-apple" width="13px" height="14px">
             </a>       
         </li>
 
-        <li class="small-screen-nav-links"><a><img src="./bag.png" id="bag" width="18px" height="18px"></a></li> 
+        <li class="small-screen-nav-links"><a><img src="https://github.com/mpinheiro-it/Apple_Crie_Seu_ID/blob/main/bag.png?raw=true" id="bag" width="18px" height="18px"></a></li> 
     </ul>
-
 
 </nav>
 
@@ -1092,7 +1090,7 @@
     <div class="container" id="birth-date-div">    
         <input type="text" placeholder="Data de nascimento" class="container__input" id="birth-date" />   
         <label class="container__label" for="birth-date">Data de nascimento</label>
-        <img src="./Blue_question_mark_icon.svg" id="birth-question-mark" width="15px" height="15px" onmouseover="showMessage(this)" onmouseout="hideMessage(this)">
+        <img src="https://raw.githubusercontent.com/mpinheiro-it/Apple_Crie_Seu_ID/83145792d89ee57750fffceb77c0ae12d1be5002/Blue_question_mark_icon.svg" id="birth-question-mark" width="15px" height="15px" onmouseover="showMessage(this)" onmouseout="hideMessage(this)">
             <div class="info-message" id="birth-info-box">Esta informação é usada para determinar 
                 quais serviços estão disponíveis para sua conta.                
             </div>
@@ -2103,7 +2101,7 @@
         <div id="cellphone-number-field">
             <input placeholder="Número de telefone" class="container__input" id="cellphone-number" /> 
             <label class="container__label" for="cellphone-number">Número de telefone</label>
-            <img src="./Blue_question_mark_icon.svg" id="cellphone-question-mark" width="15px" height="15px" onmouseover="showMessage(this)" onmouseout="hideMessage(this)">
+            <img src="https://raw.githubusercontent.com/mpinheiro-it/Apple_Crie_Seu_ID/83145792d89ee57750fffceb77c0ae12d1be5002/Blue_question_mark_icon.svg" id="cellphone-question-mark" width="15px" height="15px" onmouseover="showMessage(this)" onmouseout="hideMessage(this)">
             <div class="info-message" id="cellphone-info-box">Este número de telefone será usado para 
                 verificar sua identidade e redefinir sua senha caso você a esqueça.              
             </div>
@@ -2144,7 +2142,7 @@
         <hr>
 
         <div class="container" id="captcha-div">
-            <img src="./code-img.jpg" id="captcha-img">
+            <img src="https://github.com/mpinheiro-it/Apple_Crie_Seu_ID/blob/main/code-img.jpg?raw=true" id="captcha-img">
             <input placeholder="Insira os caracteres da imagem" class="container__input" id="captcha-input" />   
             
         </div>
@@ -2165,7 +2163,7 @@
 
         <div id="privacy-content">
 
-            <img src="./apple_privacy_update_icon.jpg" width="90px" height="50px">
+            <img src="https://github.com/mpinheiro-it/Apple_Crie_Seu_ID/blob/main/apple_privacy_update_icon.jpg?raw=true" width="90px" height="50px">
             <p>
                 As informações do seu ID Apple são usadas para permitir que você inicie sessão de forma segura e acesse seus dados. A Apple registra determinados dados de uso para fins de segurança, suporte e geração de relatórios. 
                 <a href="">Veja como os seus dados são gerenciados.</a>
@@ -2200,35 +2198,7 @@
 
 </footer>
 
-    <script>
-        //selects both information messages that are hidden
-        let birthMessage = document.querySelector("#birth-info-box") ;
-        let cellphoneMessage = document.querySelector("#cellphone-info-box") ;
-
-        //shows the appropriate message box according to what img is being hovered 
-        function showMessage(element){   
-
-            if (element.id == "birth-question-mark"){
-                birthMessage.style.display = "block"
-            }
-
-            if (element.id == "cellphone-question-mark"){
-                cellphoneMessage.style.display = "block"
-            }
-            
-        }
-        
-        //hide message box after mouse hover ends on the question icon img
-        function hideMessage(element){
-            if (element.id == "birth-question-mark"){
-                birthMessage.style.display = "none"
-            }
-
-            if (element.id == "cellphone-question-mark"){
-                cellphoneMessage.style.display = "none"
-            } 
-    }
-    </script>
+    
 
 </body>
 </html>

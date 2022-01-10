@@ -246,12 +246,12 @@ a:hover {
     }
 
 
-    .whole-line-containers {
-    display: block;  
-    position: relative; 
-    width: 480px;
-    margin: 0 auto;      
-    }
+      .whole-line-containers {
+      display: block;  
+      position: relative; 
+      width: 480px;
+      margin: 0 auto;      
+      }
 
     #birth-date-div  {
         display: inline-block;   
@@ -557,5 +557,30 @@ a:hover {
     .menu-id-apple-titulo {
         width: auto;  
         margin-left: 20px;      
-    }
+    }  
+  
+  
+  .container__input,  
+  .whole-line-containers,
+  .whole-line-inputs,
+  #birth-date,
+  #cellphone-number,
+  #verificar-div,
+  #captcha-div
+  {
+    
+    width: 380px;
+    margin: 15px auto;
+    
+  }
+  
+  #cellphone-number-field {
+    width: 100%;
+  }
+  
+  #footer-div {
+    width: 90%;
+  } 
+  
+   
 }
